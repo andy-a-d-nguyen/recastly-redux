@@ -5,3 +5,4 @@ var changeVideo = (video) => ({
 });
 
 export default changeVideo;
+// changeVideo is an action creator that returns an action---an object that contains the new state of an existing state in Redux store

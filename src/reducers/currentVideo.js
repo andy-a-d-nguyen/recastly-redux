@@ -11,3 +11,4 @@ var currentVideoReducer = (state = null, action) => {
 };
 
 export default currentVideoReducer;
+// currentVideoReducer is a function that will replace the old Redux state with the new Redux state (action) and return the new state or return the old state if action type does not match condition
