@@ -5,7 +5,7 @@ import changeVideo from './../actions/currentVideo.js';
 // Instead of passing props to from parent to children, use Redux store to pass Reux state to children through containers
 
 var mapStateToProps = (state) => ({ // this function lives in the container and gets notified by connect about changes to Redux state
-  videos: state.videos
+  videos: state.videoList
 })
 
 // dispatch is a function that takes an action object and sends it to the Redux store.
@@ -20,7 +20,7 @@ var mapDispatchToProps = (dispatch) => ({
 // the container will now pass props to children
 // event listeners now live in the container instead of the component and will be passed to the component as a prop
 // connect will listen for changes to the Redux store
-// when connect is notified of a new state, it invokes getState
+// when connect is notified of a new state, it invokes getState to get new state
 // connect then notifies mapStateToProps of new state
 // mapStateToProps then gives connect a props object
 // connect then reinitialize a new component with new props
